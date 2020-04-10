@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,168 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jokenpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="VYf-wD-JAU">
+                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-64-tCl" userLabel="viewTop">
+                                        <rect key="frame" x="0.0" y="0.0" width="896" height="89.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Pedra Papel Tesoura       Lagarto Spock" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="97C-hQ-drr" userLabel="labelTitulo">
+                                                <rect key="frame" x="8" y="30" width="398" height="49"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="45"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="97C-hQ-drr" firstAttribute="top" secondItem="bb6-64-tCl" secondAttribute="top" constant="30" id="4Gu-Gy-LBK"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="li2-0v-6L2" userLabel="viewMeio">
+                                        <rect key="frame" x="0.0" y="90.5" width="896" height="194"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Mwd-tn-F4g">
+                                                <rect key="frame" x="20" y="20" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="8qu-VG-BNa"/>
+                                                    <constraint firstAttribute="width" constant="120" id="BSx-pU-LY8"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="jn8-Bw-Zdj">
+                                                <rect key="frame" x="44" y="135" width="72" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ym1-of-Yn0">
+                                                <rect key="frame" x="226" y="20" width="120" height="120"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="I9S-ei-nWR">
+                                                <rect key="frame" x="250" y="135" width="72" height="64"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-db-1K6">
+                                                <rect key="frame" x="24" y="311" width="307" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="teste" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-Hl-Mwm">
+                                                <rect key="frame" x="135" y="259" width="85.5" height="43.5"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.33591645959999999" green="0.69504803420000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="RbX-65-x14" userLabel="viewBaixo">
+                                        <rect key="frame" x="0.0" y="285.5" width="896" height="128.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="pedra" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cFa-EI-IpU">
+                                                <rect key="frame" x="14" y="28" width="123" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration" label="0"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                <size key="titleShadowOffset" width="120" height="120"/>
+                                                <state key="normal" image="8">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" scale="default" weight="heavy"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="opcoes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b0Q-Ip-jfw"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="tesoura" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-Rw-hdb" userLabel="tesoura">
+                                                <rect key="frame" x="264" y="28" width="123" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration" label="2"/>
+                                                <size key="titleShadowOffset" width="120" height="120"/>
+                                                <state key="normal" image="11">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="opcoes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="04V-Se-EmJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="spock" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="129-98-vvN">
+                                                <rect key="frame" x="85" y="141" width="123" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration" label="3"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                <size key="titleShadowOffset" width="120" height="120"/>
+                                                <state key="normal" image="9">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" scale="default" weight="heavy"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="opcoes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4m2-0Y-N4h"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="lagarto" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GAs-4x-E7x">
+                                                <rect key="frame" x="216" y="141" width="123" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration" label="4"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                                <size key="titleShadowOffset" width="120" height="120"/>
+                                                <state key="normal" image="10">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" scale="default" weight="heavy"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="opcoes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zNk-Sk-qrf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="papel" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uQV-X8-NXZ">
+                                                <rect key="frame" x="140" y="28" width="123" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <accessibility key="accessibilityConfiguration" label="1"/>
+                                                <size key="titleShadowOffset" width="120" height="120"/>
+                                                <state key="normal" image="12">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="38" scale="default" weight="heavy"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="opcoes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1d-nd-SEI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33591645959999999" green="0.69504803420000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VYf-wD-JAU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Dnn-3c-RwB"/>
+                            <constraint firstAttribute="bottom" secondItem="VYf-wD-JAU" secondAttribute="bottom" id="JdS-H8-fWB"/>
+                            <constraint firstAttribute="trailing" secondItem="VYf-wD-JAU" secondAttribute="trailing" id="Y9L-yh-YOQ"/>
+                            <constraint firstItem="VYf-wD-JAU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qxO-id-YQi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="escolha_maquina" destination="I9S-ei-nWR" id="OSZ-fp-1X9"/>
+                        <outlet property="escolha_player" destination="jn8-Bw-Zdj" id="N2l-Mp-sgM"/>
+                        <outlet property="resultado" destination="dzp-Hl-Mwm" id="nz1-0Y-k1H"/>
+                        <outlet property="status" destination="tIA-db-1K6" id="Tm9-CL-eV5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-2968.115942028986" y="-590.625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="10" width="120" height="120"/>
+        <image name="11" width="120" height="120"/>
+        <image name="12" width="120" height="120"/>
+        <image name="4" width="40" height="40"/>
+        <image name="6" width="40" height="40"/>
+        <image name="8" width="120" height="120"/>
+        <image name="9" width="120" height="120"/>
+    </resources>
 </document>
