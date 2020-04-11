@@ -52,38 +52,83 @@
                                     <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="li2-0v-6L2" userLabel="viewMeio">
                                         <rect key="frame" x="0.0" y="274.5" width="414" height="269"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Mwd-tn-F4g">
-                                                <rect key="frame" x="0.0" y="37" width="90" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="jn8-Bw-Zdj">
-                                                <rect key="frame" x="80" y="62" width="40" height="40"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ym1-of-Yn0">
-                                                <rect key="frame" x="309" y="37" width="90" height="90"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="teste" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-Hl-Mwm">
-                                                <rect key="frame" x="98" y="125" width="128" height="33"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="I9S-ei-nWR">
-                                                <rect key="frame" x="276" y="62" width="40" height="40"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-db-1K6">
-                                                <rect key="frame" x="140" y="37" width="107" height="43.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="WZg-wU-7cp" userLabel="stack maquina">
+                                                <rect key="frame" x="324" y="0.0" width="90" height="130"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="I9S-ei-nWR">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="Iei-Zv-JDq"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Z36-qk-w2D"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ym1-of-Yn0">
+                                                        <rect key="frame" x="0.0" y="40" width="90" height="90"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="90" id="C7J-Hz-bSW"/>
+                                                            <constraint firstAttribute="height" constant="90" id="zru-ih-8ce"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Ym1-of-Yn0" firstAttribute="top" secondItem="I9S-ei-nWR" secondAttribute="bottom" id="0kA-n2-w4L"/>
+                                                    <constraint firstItem="I9S-ei-nWR" firstAttribute="top" secondItem="WZg-wU-7cp" secondAttribute="top" id="9XC-B4-3an"/>
+                                                    <constraint firstItem="I9S-ei-nWR" firstAttribute="leading" secondItem="WZg-wU-7cp" secondAttribute="leading" id="oC1-ld-Ngw"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="do5-uL-RzV" userLabel="stack player">
+                                                <rect key="frame" x="8" y="0.0" width="90" height="130"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="jn8-Bw-Zdj">
+                                                        <rect key="frame" x="50" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="iUT-cA-0BS"/>
+                                                            <constraint firstAttribute="height" constant="40" id="ppR-sJ-uJc"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6" translatesAutoresizingMaskIntoConstraints="NO" id="Mwd-tn-F4g">
+                                                        <rect key="frame" x="0.0" y="40" width="90" height="90"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="90" id="blD-Hf-6AR"/>
+                                                            <constraint firstAttribute="height" constant="90" id="iYg-tR-KqE"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="jn8-Bw-Zdj" firstAttribute="top" secondItem="do5-uL-RzV" secondAttribute="top" id="47e-66-J8I"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jn8-Bw-Zdj" secondAttribute="trailing" id="c30-RU-gnJ"/>
+                                                    <constraint firstItem="Mwd-tn-F4g" firstAttribute="top" secondItem="jn8-Bw-Zdj" secondAttribute="bottom" id="tdF-hm-aVG"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vOF-LH-i3J" userLabel="stack resposta">
+                                                <rect key="frame" x="153.5" y="92.5" width="107" height="84.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-db-1K6">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="43.5"/>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="teste" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-Hl-Mwm">
+                                                        <rect key="frame" x="0.0" y="51.5" width="107" height="33"/>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.33591645959999999" green="0.69504803420000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="do5-uL-RzV" firstAttribute="leading" secondItem="li2-0v-6L2" secondAttribute="leading" constant="8" id="IDN-S0-dtv"/>
+                                            <constraint firstItem="do5-uL-RzV" firstAttribute="top" secondItem="li2-0v-6L2" secondAttribute="top" id="Lit-eu-S7K"/>
+                                            <constraint firstItem="vOF-LH-i3J" firstAttribute="centerY" secondItem="li2-0v-6L2" secondAttribute="centerY" id="gCq-XA-77d"/>
+                                            <constraint firstItem="WZg-wU-7cp" firstAttribute="top" secondItem="li2-0v-6L2" secondAttribute="top" id="gL9-cA-avn"/>
+                                            <constraint firstItem="vOF-LH-i3J" firstAttribute="centerX" secondItem="li2-0v-6L2" secondAttribute="centerX" id="kMa-ns-N6N"/>
+                                            <constraint firstItem="do5-uL-RzV" firstAttribute="centerY" secondItem="li2-0v-6L2" secondAttribute="centerY" id="mW5-Mv-amO"/>
+                                            <constraint firstAttribute="trailing" secondItem="WZg-wU-7cp" secondAttribute="trailing" id="slu-0e-aaH"/>
+                                            <constraint firstItem="WZg-wU-7cp" firstAttribute="centerY" secondItem="li2-0v-6L2" secondAttribute="centerY" id="zQ2-2L-4Fp"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="RbX-65-x14" userLabel="viewescolhas">
                                         <rect key="frame" x="0.0" y="548.5" width="414" height="269.5"/>

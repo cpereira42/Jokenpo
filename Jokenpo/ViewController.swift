@@ -68,11 +68,12 @@ class ViewController: UIViewController {
     @objc func analisa(op_maquina : Int, op_player : Int)
     {
         //tente_novamente2.isHidden = false
-        print("player\(op_player) maq = \(op_maquina)")
+        //print("player\(op_player) maq = \(op_maquina)")
+        //ativa_timer()
         if (op_maquina == op_player)
         {
-            print("empate")
-            resultado.text = "Empatou"
+            resultado.text = ""
+            status.text = "Empatou"
         }
         else
         {
@@ -93,7 +94,8 @@ class ViewController: UIViewController {
                         resultado.text = "Pedra esmaga lagarto"
                         status.text = "Ganhou"
                 default:
-                    resultado.text = "Empate"
+                    resultado.text = ""
+                    status.text = "Empatou"
                 }
             }
 
@@ -101,60 +103,81 @@ class ViewController: UIViewController {
             {
                 switch op_maquina {
                     case 2:
-                         resultado.text = "Tesoura corta papel - Perdeu"
+                         resultado.text = "Tesoura corta papel"
+                         status.text = "Perdeu"
                     case 4:
-                        resultado.text = "Lagarto come papel - Perdeu"
+                        resultado.text = "Lagarto come papel"
+                        status.text = "Perdeu"
                     case 0 :
-                        resultado.text = "Papel cobre pedra - Ganhou"
+                        resultado.text = "Papel cobre pedra"
+                        status.text = "Ganhou"
                     case 3 :
-                        resultado.text = "Papel refuta spock - Ganhou"
+                        resultado.text = "Papel refuta spock"
+                        status.text = "Ganhou"
                 default:
-                    resultado.text = "Empate"
+                    resultado.text = ""
+                    status.text = "Empatou"
                 }
             }
             if (op_player == 2)
             {
                 switch op_maquina {
                     case 0:
-                         resultado.text = "Pedra quebra tesoura - Perdeu"
+                         resultado.text = "Pedra quebra tesoura"
+                         status.text = "Perdeu"
                     case 3:
-                        resultado.text = "Spock esmaga tesoura - Perdeu"
+                        resultado.text = "Spock esmaga tesoura"
+                        status.text = "Perdeu"
                     case 1 :
-                        resultado.text = "Tesoura corta papel - Ganhou"
+                        resultado.text = "Tesoura corta papel"
+                        status.text = "Ganhou"
                     case 4 :
-                        resultado.text = "Tesoura decapta lagarto - Ganhou"
+                        resultado.text = "Tesoura decapta lagarto"
+                        status.text = "Ganhou"
                 default:
-                    resultado.text = "Empate"
+                    resultado.text = ""
+                    status.text = "Empatou"
                 }
             }
             if (op_player == 3)
             {
                 switch op_maquina {
                     case 4:
-                         resultado.text = "Lagarto envenena spock - Perdeu"
+                         resultado.text = "Lagarto envenena spock"
+                         status.text = "Perdeu"
                     case 1:
-                        resultado.text = "Papel refuta spock - Perdeu"
+                        resultado.text = "Papel refuta spocku"
+                        status.text = "Perdeu"
                     case 2 :
-                        resultado.text = "Spock esmaga tesoura - Ganhou"
+                        resultado.text = "Spock esmaga tesoura"
+                        status.text = "Ganhou"
                     case 0 :
-                        resultado.text = "Spock vaporiza pedra - Ganhou"
+                        resultado.text = "Spock vaporiza pedra"
+                        status.text = "Ganhou"
                 default:
-                    resultado.text = "Empate"
+                    resultado.text = ""
+                    status.text = "Empatou"
                 }
             }
             if (op_player == 4)
             {
                 switch op_maquina {
                     case 2:
-                         resultado.text = "Tesoura decapta lagarto - Perdeu"
+                         resultado.text = "Tesoura decapta lagarto"
+                         status.text = "Perdeu"
                     case 0:
-                        resultado.text = "Pedra esmaga lagarto - Perdeu"
+                        resultado.text = "Pedra esmaga lagarto"
+                        status.text = "Perdeu"
                     case 1 :
-                        resultado.text = "Lagarto come papel - Ganhou"
+                        resultado.text = "Lagarto come papel"
+                        status.text = "Ganhou"
                     case 3 :
-                        resultado.text = "Lagarto envenena spock - Ganhou"
+                        resultado.text = "Lagarto envenena spock"
+                        status.text = "Ganhou"
                 default:
-                    resultado.text = "Empate"
+                    resultado.text = ""
+                    status.text = "Empatou"
+                    
                 }
             }
         }
