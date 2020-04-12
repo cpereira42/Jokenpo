@@ -22,26 +22,25 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="269.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="h1e-TF-IhC">
-                                                <rect key="frame" x="0.0" y="100.5" width="414" height="68"/>
+                                                <rect key="frame" x="0.0" y="101.5" width="414" height="66"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pedra Papel Tesoura" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="iWV-DA-Blk" userLabel="labelTitulo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
-                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
-                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="33"/>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lagarto Spock" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="97C-hQ-drr" userLabel="labelTitulo">
-                                                        <rect key="frame" x="0.0" y="34" width="414" height="34"/>
-                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="30"/>
-                                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <rect key="frame" x="0.0" y="33" width="414" height="33"/>
+                                                        <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="h1e-TF-IhC" secondAttribute="trailing" id="5mL-Hn-QeI"/>
                                             <constraint firstItem="h1e-TF-IhC" firstAttribute="leading" secondItem="iW4-4T-6ki" secondAttribute="leading" id="TbS-TU-teu"/>
@@ -101,16 +100,15 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vOF-LH-i3J" userLabel="stack resposta">
-                                                <rect key="frame" x="153.5" y="92.5" width="107" height="84.5"/>
+                                                <rect key="frame" x="207" y="225" width="0.0" height="8"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-db-1K6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="43.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIA-db-1K6">
                                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="40"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="teste" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-Hl-Mwm">
-                                                        <rect key="frame" x="0.0" y="51.5" width="107" height="33"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dzp-Hl-Mwm">
+                                                        <rect key="frame" x="0.0" y="8" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="30"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -118,11 +116,10 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.33591645959999999" green="0.69504803420000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="do5-uL-RzV" firstAttribute="leading" secondItem="li2-0v-6L2" secondAttribute="leading" constant="8" id="IDN-S0-dtv"/>
                                             <constraint firstItem="do5-uL-RzV" firstAttribute="top" secondItem="li2-0v-6L2" secondAttribute="top" id="Lit-eu-S7K"/>
-                                            <constraint firstItem="vOF-LH-i3J" firstAttribute="centerY" secondItem="li2-0v-6L2" secondAttribute="centerY" id="gCq-XA-77d"/>
+                                            <constraint firstItem="vOF-LH-i3J" firstAttribute="centerY" secondItem="li2-0v-6L2" secondAttribute="bottom" constant="-40" id="gCq-XA-77d"/>
                                             <constraint firstItem="WZg-wU-7cp" firstAttribute="top" secondItem="li2-0v-6L2" secondAttribute="top" id="gL9-cA-avn"/>
                                             <constraint firstItem="vOF-LH-i3J" firstAttribute="centerX" secondItem="li2-0v-6L2" secondAttribute="centerX" id="kMa-ns-N6N"/>
                                             <constraint firstItem="do5-uL-RzV" firstAttribute="centerY" secondItem="li2-0v-6L2" secondAttribute="centerY" id="mW5-Mv-amO"/>
@@ -225,12 +222,10 @@
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="ckS-ar-Ect" firstAttribute="top" secondItem="eb2-rU-nHB" secondAttribute="top" constant="30" id="idG-mt-UOW"/>
                                                     <constraint firstAttribute="bottom" secondItem="41j-qc-3QN" secondAttribute="bottom" id="nW4-zK-fUD"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="eb2-rU-nHB" secondAttribute="bottom" id="1d7-dd-smI"/>
                                             <constraint firstItem="eb2-rU-nHB" firstAttribute="centerY" secondItem="RbX-65-x14" secondAttribute="centerY" id="1nw-Fh-nKM"/>
@@ -243,6 +238,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <color key="backgroundColor" red="0.32035708429999998" green="0.67665976289999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BEc-Bj-olx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="E0B-sm-WtZ"/>
                             <constraint firstItem="BEc-Bj-olx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IhX-h7-bHc"/>
@@ -260,7 +256,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3232" y="-1570"/>
+            <point key="canvasLocation" x="-3677" y="-1977"/>
         </scene>
     </scenes>
     <resources>
