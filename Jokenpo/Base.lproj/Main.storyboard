@@ -131,13 +131,13 @@
                                         <rect key="frame" x="0.0" y="548.5" width="414" height="269.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eb2-rU-nHB">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="269.5"/>
+                                                <rect key="frame" x="0.0" y="84.5" width="414" height="185"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ckS-ar-Ect" userLabel="linha1">
-                                                        <rect key="frame" x="62" y="0.0" width="290" height="132.5"/>
+                                                        <rect key="frame" x="62" y="0.0" width="290" height="90"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="pedra" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cFa-EI-IpU">
-                                                                <rect key="frame" x="0.0" y="0.0" width="90" height="132.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                                 <accessibility key="accessibilityConfiguration" label="0"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="90" id="GJ7-rn-2NY"/>
@@ -153,7 +153,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="papel" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uQV-X8-NXZ">
-                                                                <rect key="frame" x="100" y="0.0" width="90" height="132.5"/>
+                                                                <rect key="frame" x="100" y="0.0" width="90" height="90"/>
                                                                 <accessibility key="accessibilityConfiguration" label="1"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="90" id="4b7-85-39V"/>
@@ -167,7 +167,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="tesoura" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7BC-Rw-hdb" userLabel="tesoura">
-                                                                <rect key="frame" x="200" y="0.0" width="90" height="132.5"/>
+                                                                <rect key="frame" x="200" y="0.0" width="90" height="90"/>
                                                                 <accessibility key="accessibilityConfiguration" label="2"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="90" id="Ybg-5b-llx"/>
@@ -183,10 +183,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="61" translatesAutoresizingMaskIntoConstraints="NO" id="41j-qc-3QN" userLabel="linha 2">
-                                                        <rect key="frame" x="86.5" y="137.5" width="241" height="132"/>
+                                                        <rect key="frame" x="86.5" y="95" width="241" height="90"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="spock" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="129-98-vvN">
-                                                                <rect key="frame" x="0.0" y="0.0" width="90" height="132"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                                 <accessibility key="accessibilityConfiguration" label="3"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="90" id="pWw-wg-AEX"/>
@@ -202,7 +202,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="lagarto" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GAs-4x-E7x">
-                                                                <rect key="frame" x="151" y="0.0" width="90" height="132"/>
+                                                                <rect key="frame" x="151" y="0.0" width="90" height="90"/>
                                                                 <accessibility key="accessibilityConfiguration" label="4"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="90" id="jx2-ZK-esc"/>
@@ -230,7 +230,6 @@
                                             <constraint firstAttribute="bottom" secondItem="eb2-rU-nHB" secondAttribute="bottom" id="1d7-dd-smI"/>
                                             <constraint firstItem="eb2-rU-nHB" firstAttribute="centerY" secondItem="RbX-65-x14" secondAttribute="centerY" id="1nw-Fh-nKM"/>
                                             <constraint firstItem="eb2-rU-nHB" firstAttribute="leading" secondItem="RbX-65-x14" secondAttribute="leading" id="21i-V6-R27"/>
-                                            <constraint firstItem="eb2-rU-nHB" firstAttribute="top" secondItem="RbX-65-x14" secondAttribute="top" id="SM3-Z3-6Zb"/>
                                             <constraint firstAttribute="trailing" secondItem="eb2-rU-nHB" secondAttribute="trailing" id="VrW-eF-HaX"/>
                                             <constraint firstItem="eb2-rU-nHB" firstAttribute="centerX" secondItem="RbX-65-x14" secondAttribute="centerX" id="Y7t-O9-Ho9"/>
                                         </constraints>
